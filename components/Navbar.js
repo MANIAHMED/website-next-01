@@ -1,13 +1,13 @@
-import styled from "styled-components";
-import Link from "next/link";
+import styled from 'styled-components';
+import Link from 'next/link';
 
 const Nav = styled.nav`
   height: 80px;
   background: #000;
-  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #fff;
 `;
 
 const StyledLink = styled.a`
@@ -18,19 +18,19 @@ const Navbar = () => {
   return (
     <Nav>
       <div>
-        <Link href="/" passHref>
-          <StyledLink>NXT </StyledLink>
+        <Link href='/' passHref>
+          <StyledLink>NXT</StyledLink>
         </Link>
-      </div>{" "}
+      </div>
       <div>
-        <Link href="/" passHref>
+        <Link href='/' passHref>
           <StyledLink>Home</StyledLink>
         </Link>
-        <Link href="/" passHref>
-          <StyledLink>Product </StyledLink>
+        <Link href='/about' passHref>
+          <StyledLink>About</StyledLink>
         </Link>
-        <Link href="/" passHref>
-          <StyledLink>Services</StyledLink>
+        <Link href='/contact' passHref>
+          <StyledLink>Contact</StyledLink>
         </Link>
       </div>
     </Nav>
